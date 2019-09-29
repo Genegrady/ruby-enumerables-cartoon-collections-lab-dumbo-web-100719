@@ -13,7 +13,7 @@ end
 def long_planeteer_calls(long_calls)
   if long_calls.any? {|string| string >= 4}
     return true 
-  elsif long_calls.all? {
+  elsif long_calls.all? {|string| string <=4}
     return false
   end
   return long_calls
